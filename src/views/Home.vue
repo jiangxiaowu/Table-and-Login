@@ -46,7 +46,7 @@
                             prepend-icon="lock"
                             type="password"
                             color="teal accent-4"
-                             v-model="password"
+                            v-model="password"
                           />
                         </v-form>
                         <h3 class="text-center mt-3">Forget your password ?</h3>
@@ -157,22 +157,22 @@
 export default {
   data: () => ({
     step: 1,
-    email:"Admin",
-    password:null
-
+    email: "Admin",
+    password: null,
   }),
   props: {
     source: String,
   },
-  methods:{
-    login(){
+ 
+  methods: {
+    login() {
       console.log(this.email);
       console.log(this.password);
       // todo: request backend api
-      if(this.email === "admin"){
-        this.$router.replace({path:'/navbar'})
+      if (this.email === "Admin") {
+        this.$router.replace({ path: "/about"});
       }
-    }
-  }
+    },
+  },
 };
 </script>

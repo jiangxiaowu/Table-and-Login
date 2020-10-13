@@ -1,18 +1,20 @@
 <template>
   <v-app>
-    <v-content>
-      <!-- <router-link to="/login">Login</router-link> -->
+    <!-- <router-link to="/">Home</router-link>
+    <router-link to="/about">Page</router-link> -->
+    <v-main>
       <router-view></router-view>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
 <script>
+// import Navbar from "./components/Navbar";
 export default {
   name: "App",
 
   components: {
- 
+    // Navbar,
   },
 
   data: () => ({
