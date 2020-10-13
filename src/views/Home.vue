@@ -157,7 +157,7 @@
 export default {
   data: () => ({
     step: 1,
-    email:"admin",
+    email:"Admin",
     password:null
 
   }),
@@ -170,7 +170,7 @@ export default {
       console.log(this.password);
       // todo: request backend api
       if(this.email === "admin"){
-        this.$router.replace({path:'/login'})
+        this.$router.replace({path:'/navbar'})
       }
     }
   }
