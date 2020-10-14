@@ -35,7 +35,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <GChart type="ColumnChart" :data="chartData" :options="chartOptions" />
+    <NewChart/>
     <v-navigation-drawer
       v-model="right"
       dark
@@ -93,47 +93,13 @@
 </template>
 
 <script>
-import { GChart } from "vue-google-charts";
-const gradients = [
-  ["#222"],
-  ["#42b3f4"],
-  ["red", "orange", "yellow"],
-  ["purple", "violet"],
-  ["#00c6ff", "#F0F", "#FF0"],
-  ["#f72047", "#ffd200", "#1feaea"],
-];
+import NewChart from "@/components/NewChart";
+
 export default {
   components: {
-    GChart,
+    NewChart,
   },
-  data() {
-    return {
-      picker: new Date.toISOString().substr(0, 10),
-      chartData: [
-      
-      ],
-      chartOptions: {
-        chart: {
-          title: "Company Performance",
-          subtitle: "Sales, Expenses, and Profit: 2014-2017",
-        },
-      },
-      showLabels: false,
-      lineWidth: 2,
-      labelSize: 7,
-      radius: 10,
-      padding: 8,
-      lineCap: "round",
-      gradient: gradients[5],
-      value: [2, 2, 5, 9, 5, 10, 3, 5, -4, -10, 1, 8, 2, 9, 0],
-      geadientDirection: "top",
-      gradients,
-      fill: false,
-      type: "trend",
-      autoLineWidth: false,
-    };
-  },
-};
+  };
 </script>
 
 <style>
