@@ -137,7 +137,7 @@ export default {
         },
         {
           name: "FlyBird",
-          path:"/flybrid",
+          path:"/flybird",
           price: "Free",
           logo: "baguette-logo.png",
           platforms: [
@@ -173,7 +173,7 @@ export default {
         },
         {
           name: "Calculator",
-          path:"cal",
+          path:"/cal",
           price: "Free",
           logo: "facebook-logo.png",
           platforms: [

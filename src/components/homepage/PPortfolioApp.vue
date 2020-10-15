@@ -59,8 +59,7 @@ export default {
       return require(name);
     },
     topath(path) {
-      console.log(path);
-      console.log(this.router);
+     this.$router.push({ path: path});
     },
   },
 };

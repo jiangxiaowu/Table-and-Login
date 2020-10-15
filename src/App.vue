@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <PToolbar />
-    <v-content style="background-color: white">
+    <v-main style="background-color: white">
       <router-view />
-    </v-content>
+    </v-main>
     <PFooter />
   </v-app>
 </template>

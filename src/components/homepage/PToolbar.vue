@@ -57,7 +57,7 @@ export default {
   },
   methods:{
     jump(){
-       this.$router.push({ path: "/LoginRouter"});
+       this.$router.push({ path: "/login"});
     }
   }
 };
