@@ -35,7 +35,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <NewChart/>
+   <NewChart/>
     <v-navigation-drawer
       v-model="right"
       dark
@@ -47,7 +47,7 @@
       <v-layout column align-center>
         <v-flex class="mt-5">
           <v-avatar size="100">
-            <img src="../assets/green.jpg" alt="" />
+            <img src="@/assets/green.jpg" alt="" />
           </v-avatar>
           <h4 class="white--text subheading mt-1 text-center">Julian Neal</h4>
           <h6 class="white--text subheading mt-1 text-center">
@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import NewChart from "@/components/NewChart";
+import NewChart from "@/components/chart/NewChart";
 
 export default {
   components: {

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
+import Navbar from "@/components/chart/Navbar.vue";
 
 export default {
   name: "Page",

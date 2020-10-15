@@ -1,24 +1,27 @@
 <template>
   <v-app>
-    <!-- <router-link to="/">Home</router-link>
-    <router-link to="/about">Page</router-link> -->
-    <v-main>
-      <router-view></router-view>
-    </v-main>
+    <PToolbar />
+    <v-content style="background-color: white">
+      <router-view />
+    </v-content>
+    <PFooter />
   </v-app>
 </template>
 
 <script>
-// import Navbar from "./components/Navbar";
+import PToolbar from "./components//homepage/PToolbar";
+import PFooter from "./components/homepage/PFooter";
+
 export default {
   name: "App",
 
   components: {
-    // Navbar,
+    PToolbar,
+    PFooter
   },
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
