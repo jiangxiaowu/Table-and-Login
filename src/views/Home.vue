@@ -57,7 +57,7 @@
         </v-flex>
         <template v-for="(contact, i) in contactLinks">
           <v-flex sm6 md4 xs12 :key="i">
-            <p-contact-info :contact="contact" />
+            <PContactInfo :contact="contact" />
           </v-flex>
         </template>
       </v-layout>
@@ -76,6 +76,7 @@ export default {
     PPortfolioApp,
     PContactInfo,
   },
+
   data() {
     return {
       aboutText:
@@ -137,7 +138,7 @@ export default {
         },
         {
           name: "FlyBird",
-          path:"/flybird",
+          path: "/flybird",
           price: "Free",
           logo: "baguette-logo.png",
           platforms: [
@@ -173,7 +174,7 @@ export default {
         },
         {
           name: "Calculator",
-          path:"/cal",
+          path: "/cal",
           price: "Free",
           logo: "facebook-logo.png",
           platforms: [
@@ -213,6 +214,9 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    this.$emit("showBar");
   },
 };
 </script>

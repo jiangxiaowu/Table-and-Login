@@ -97,6 +97,7 @@ export default {
 
 <style scoped>
 .calculator {
+  text-align: center;
   width: 400px;
   margin: 0px auto;
   font-size: 35px;
@@ -128,5 +129,6 @@ export default {
 .explan{
   padding: 10px;
   margin: 10px;
+  text-align: center;
 }
 </style>

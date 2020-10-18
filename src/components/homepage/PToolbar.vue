@@ -1,16 +1,18 @@
 <template>
-  <v-app-bar flat absolute color="transparent" dark height="120px">
+  <v-app-bar flat relatively height="60px" id="home">
     <v-layout justify-center>
       <v-container>
         <v-layout>
-          <div
+          <v-tab
             :class="{
               'display-1 font-weight-bold': $vuetify.breakpoint.smAndUp,
               'title font-weight-bold': $vuetify.breakpoint.smAndDown,
             }"
+            to="/"
+            
           >
-           The Ville
-          </div>
+            The Ville
+          </v-tab>
           <v-spacer></v-spacer>
           <v-toolbar-items class="text-right">
             <v-btn
@@ -31,10 +33,7 @@
               text
               >Contact</v-btn
             >
-             <v-btn
-              :x-small="$vuetify.breakpoint.smAndDown"
-             @click="jump"
-              text
+            <v-btn :x-small="$vuetify.breakpoint.smAndDown" @click="jump" text
               >Login</v-btn
             >
           </v-toolbar-items>
@@ -55,11 +54,12 @@ export default {
       },
     };
   },
-  methods:{
-    jump(){
-       this.$router.push({ path: "/login"});
-    }
-  }
+  methods: {
+    jump() {
+      this.$router.push({ name: "Login", params: { display: true } });
+    },
+  },
+  mounted() {},
 };
 </script>
 
