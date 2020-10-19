@@ -60,7 +60,15 @@
             <PContactInfo :contact="contact" />
           </v-flex>
         </template>
+        
       </v-layout>
+      <v-flex class="upbutton">
+          <v-btn @click="$vuetify.goTo('#home')">
+            <v-icon large color="black darken-2"
+              >mdi-arrow-up-bold-box-outline</v-icon
+            ></v-btn
+          >
+        </v-flex>
     </v-container>
   </div>
 </template>
@@ -220,3 +228,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+.upbutton{
+   float:right;
+   padding: 20px;
+}
+</style>

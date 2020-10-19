@@ -4,8 +4,6 @@
       {{ new Date().getFullYear() }} —
       <strong>&copy; My Website --Jiang Wu &#x2767;</strong>
     </v-col>
-    <v-btn @click="$vuetify.goTo('#home')">中国加油</v-btn>
-
   </v-footer>
 </template>
 
