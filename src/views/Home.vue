@@ -99,7 +99,7 @@ export default {
             {
               name: "web",
               icon: "mdi-web",
-              link: "https://apps.apple.com/us/app/food-vision/id1437083324",
+              link: "",
             },
           ],
           description:
