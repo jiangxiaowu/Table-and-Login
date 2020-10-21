@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <PToolbar v-if="reloadHeader()" />
-
+    
     <v-main style="background-color: white">
       <router-view />
     </v-main>

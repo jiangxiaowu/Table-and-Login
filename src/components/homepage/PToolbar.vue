@@ -3,19 +3,15 @@
     <v-layout justify-center>
       <v-container>
         <v-layout>
-          <v-toolbar-items>
-            <v-btn
-              :x-small="$vuetify.breakpoint.smAndDown"
-              :class="{
-                'display-1 font-weight-bold': $vuetify.breakpoint.smAndUp,
-                'title font-weight-bold': $vuetify.breakpoint,
-              }"
-              @click="homepage"
-              text
-            >
-              The Ville
-            </v-btn>
-          </v-toolbar-items>
+          <div
+            :class="{
+              'display-1 font-weight-bold': $vuetify.breakpoint.smAndUp,
+              'title font-weight-bold': $vuetify.breakpoint.smAndDown,
+            }"
+          >
+            The Ville
+          </div>
+
           <v-spacer></v-spacer>
           <v-toolbar-items class="text-right">
             <v-btn
@@ -69,5 +65,10 @@ export default {
 };
 </script>
 
-<style>
-</style>
+// :x-small="$vuetify.breakpoint.smAndDown"
+//               :class="{
+//                 'display-1 font-weight-bold': $vuetify.breakpoint.smAndUp,
+//                 'title font-weight-bold': $vuetify.breakpoint.smAndUp,
+//               }"
+//               @click="homepage"
+//               text

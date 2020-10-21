@@ -231,6 +231,6 @@ export default {
 <style scoped>
 .upbutton{
    float:right;
-   padding: 20px;
+   padding: 15px;
 }
 </style>
