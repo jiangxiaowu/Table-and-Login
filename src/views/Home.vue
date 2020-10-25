@@ -57,10 +57,18 @@
         </v-flex>
         <template v-for="(contact, i) in contactLinks">
           <v-flex sm6 md4 xs12 :key="i">
-            <p-contact-info :contact="contact" />
+            <PContactInfo :contact="contact" />
           </v-flex>
         </template>
+        
       </v-layout>
+      <v-flex class="upbutton">
+          <v-btn @click="$vuetify.goTo('#home')">
+            <v-icon large color="black darken-2"
+              >mdi-arrow-up-bold-box-outline</v-icon
+            ></v-btn
+          >
+        </v-flex>
     </v-container>
   </div>
 </template>
@@ -76,6 +84,7 @@ export default {
     PPortfolioApp,
     PContactInfo,
   },
+
   data() {
     return {
       aboutText:
@@ -90,7 +99,7 @@ export default {
             {
               name: "web",
               icon: "mdi-web",
-              link: "https://apps.apple.com/us/app/food-vision/id1437083324",
+              link: "",
             },
           ],
           description:
@@ -137,7 +146,7 @@ export default {
         },
         {
           name: "FlyBird",
-          path:"/flybird",
+          path: "/flybird",
           price: "Free",
           logo: "baguette-logo.png",
           platforms: [
@@ -173,7 +182,7 @@ export default {
         },
         {
           name: "Calculator",
-          path:"/cal",
+          path: "/cal",
           price: "Free",
           logo: "facebook-logo.png",
           platforms: [
@@ -214,5 +223,14 @@ export default {
       ],
     };
   },
+  created() {
+    this.$emit("showBar");
+  },
 };
 </script>
+<style scoped>
+.upbutton{
+   float:right;
+   padding: 15px;
+}
+</style>

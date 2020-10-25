@@ -163,14 +163,12 @@ export default {
   props: {
     source: String,
   },
- 
+
   methods: {
     login() {
-      console.log(this.email);
-      console.log(this.password);
       // todo: request backend api
       if (this.email === "Admin") {
-        this.$router.replace({ path: "/ChartRouter"});
+        this.$router.push({ name: "DashBoard", params: { display: false } });
       }
     },
   },
